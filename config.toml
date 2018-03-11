@@ -1,4 +1,4 @@
-baseurl = "https://example.com"
+baseurl = "https://frosty-ptolemy-9f7086.netlify.com"
 languageCode = "en"
 title = "Hugo Kiss theme"
 theme = "kiss"
