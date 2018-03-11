@@ -1,3 +1,34 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://example.com"
+languageCode = "en"
+title = "Hugo Kiss theme"
+theme = "kiss"
+copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
+disqusShortname = "shortname"
+googleAnalytics = ""
+# Number of posts per page
+Paginate = 5
+enableRobotsTXT = true
+hasCJKLanguage = true
+
+
+[params.assets]
+customCSS = ["css/custom.css"]
+
+[params.info]
+adsense = "" # Adsense ID (ID only, without ca-pub-)
+enableSocial = true # Adds OpenGraph and Twitter cards
+homeTitle = "" # Title for home page
+poweredby = true # Adds powered by hugo and kiss below Copyright
+related = true # Includes related articles at the bottom of the article
+
+[params.social]
+
+twitter = "smy20011"
+github = "smy20011"
+email = "smy20011@gmail.com"
+
+[taxonomies]
+tag ="tags"
+
+[blackfriday]
+hrefTargetBlank = true
