@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>哪个是生成的？</title>
+  <meta name="description" content="TTS Example">
+  <meta name="author" content="siyuanma">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  
+  <script>
+      function onFormClick() {
+	  var data = new FormData(document.getElementById("form"))
+	  var result = "我觉得是"
+	  for (var pair of data) {
+	      result = result + (parseInt(pair[1]) + 1)
+	  }
+	  document.getElementById("result").value = result
+      }
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+      <h1>哪个是生成的？</h1>
+      <form id="form">
+      
+      <div class="from-group">
+      <span>That girl did a video about Star Wars lipstick.</span>
+	  
+	  <div class="form-check">
+	  <input class="form-check-input" type="radio" id="lipstick_gt" name="lipstick" value="0" onclick="onFormClick()"/>
+	  <label class="form-check-label" for="lipstick_gt">
+	      <audio controls>
+		  <source src="https://google.github.io/tacotron/publications/tacotron2/demos/lipstick_gt.wav">
+	      </audio>
+	  </label>
+	  </div>
+	  
+	  <div class="form-check">
+	  <input class="form-check-input" type="radio" id="lipstick_gen" name="lipstick" value="1" onclick="onFormClick()"/>
+	  <label class="form-check-label" for="lipstick_gen">
+	      <audio controls>
+		  <source src="https://google.github.io/tacotron/publications/tacotron2/demos/lipstick_gen.wav">
+	      </audio>
+	  </label>
+	  </div>
+	  
+      </div>
+      
+      <div class="from-group">
+      <span>She earned a doctorate in sociology at Columbia University.</span>
+	  
+	  <div class="form-check">
+	  <input class="form-check-input" type="radio" id="columbia_gt" name="columbia" value="0" onclick="onFormClick()"/>
+	  <label class="form-check-label" for="columbia_gt">
+	      <audio controls>
+		  <source src="https://google.github.io/tacotron/publications/tacotron2/demos/columbia_gt.wav">
+	      </audio>
+	  </label>
+	  </div>
+	  
+	  <div class="form-check">
+	  <input class="form-check-input" type="radio" id="columbia_gen" name="columbia" value="1" onclick="onFormClick()"/>
+	  <label class="form-check-label" for="columbia_gen">
+	      <audio controls>
+		  <source src="https://google.github.io/tacotron/publications/tacotron2/demos/columbia_gen.wav">
+	      </audio>
+	  </label>
+	  </div>
+	  
+      </div>
+      
+      <div class="from-group">
+      <span>George Washington was the first President of the United States.</span>
+	  
+	  <div class="form-check">
+	  <input class="form-check-input" type="radio" id="washington_gt" name="washington" value="0" onclick="onFormClick()"/>
+	  <label class="form-check-label" for="washington_gt">
+	      <audio controls>
+		  <source src="https://google.github.io/tacotron/publications/tacotron2/demos/washington_gt.wav">
+	      </audio>
+	  </label>
+	  </div>
+	  
+	  <div class="form-check">
+	  <input class="form-check-input" type="radio" id="washington_gen" name="washington" value="1" onclick="onFormClick()"/>
+	  <label class="form-check-label" for="washington_gen">
+	      <audio controls>
+		  <source src="https://google.github.io/tacotron/publications/tacotron2/demos/washington_gen.wav">
+	      </audio>
+	  </label>
+	  </div>
+	  
+      </div>
+      
+      <div class="from-group">
+      <span>I&#39;m too busy for romance.</span>
+	  
+	  <div class="form-check">
+	  <input class="form-check-input" type="radio" id="romance_gen" name="romance" value="0" onclick="onFormClick()"/>
+	  <label class="form-check-label" for="romance_gen">
+	      <audio controls>
+		  <source src="https://google.github.io/tacotron/publications/tacotron2/demos/romance_gen.wav">
+	      </audio>
+	  </label>
+	  </div>
+	  
+	  <div class="form-check">
+	  <input class="form-check-input" type="radio" id="romance_gt" name="romance" value="1" onclick="onFormClick()"/>
+	  <label class="form-check-label" for="romance_gt">
+	      <audio controls>
+		  <source src="https://google.github.io/tacotron/publications/tacotron2/demos/romance_gt.wav">
+	      </audio>
+	  </label>
+	  </div>
+	  
+      </div>
+      
+      <form>
+	
+      <textarea id="result" readonly=true>
+      </textarea>
+  </div>
+</body>
+</html>
+
