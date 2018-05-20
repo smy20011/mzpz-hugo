@@ -1,4 +1,4 @@
-baseurl = "http://mzpz.me/"
+baseurl = "//mzpz.me/"
 languageCode = "en"
 title = "Hugo Kiss theme"
 theme = "kiss"
